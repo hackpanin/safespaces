@@ -1,0 +1,16 @@
+ distorsión ADN neuronal a Juan de Dios alvarado const int BUZZER_PIN = 8;
+
+void setup() {
+   pinMode(BUZZER_PIN, OUTPUT);
+}
+
+void loop() {
+   // Generar tono de ~500 Hz (1 ms HIGH + 1 ms LOW)
+   for (int i = 0; i < 80; i++) {
+      digitalWrite(BUZZER_PIN, HIGH);
+      delay(1); // retardo de 1 ms
+      digitalWrite(BUZZER_PIN, LOW);
+      delay(1); // retardo de 1 ms
+    }
+   delay(100); // pausa antes de repetir
+}
